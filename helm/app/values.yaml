@@ -18,9 +18,9 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
 
 imagePullSecrets: 
-  - name: ${{ values.component_id }}-registry-creds
+  - name: my-quarkus-3-registry-creds
 
-nameOverride: "${{ values.component_id }}"
+nameOverride: "my-quarkus-3"
 fullnameOverride: ""
 
 serviceAccount:
@@ -30,7 +30,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ${{ values.component_id }}
+  name: my-quarkus-3
 
 podAnnotations: {}
 
