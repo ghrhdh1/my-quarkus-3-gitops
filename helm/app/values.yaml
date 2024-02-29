@@ -17,7 +17,9 @@ image:
   name: my-quarkus-3
   # Overrides the image tag whose default is the chart appVersion.
 
-imagePullSecrets: []
+imagePullSecrets: 
+  - name: ${{ values.component_id }}-registry-creds
+
 nameOverride: ""
 fullnameOverride: ""
 
