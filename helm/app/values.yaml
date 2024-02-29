@@ -20,7 +20,7 @@ image:
 imagePullSecrets: 
   - name: ${{ values.component_id }}-registry-creds
 
-nameOverride: ""
+nameOverride: "${{ values.component_id }}"
 fullnameOverride: ""
 
 serviceAccount:
